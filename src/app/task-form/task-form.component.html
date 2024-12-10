@@ -1,0 +1,12 @@
+<mat-card>
+  <form>
+    <mat-form-field class="full-width">
+      <mat-label>Nova Tarefa</mat-label>
+      <!-- Adicionando o atributo name ao input -->
+      <input matInput placeholder="Digite uma tarefa" [(ngModel)]="taskTitle" name="taskTitle">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="addTask()" [disabled]="!taskTitle.trim()">
+      Adicionar
+    </button>
+  </form>
+</mat-card>

@@ -1,0 +1,13 @@
+<mat-card>
+    <h2>Lista de Tarefas</h2>
+    <mat-list>
+      <mat-list-item *ngFor="let task of tasks">
+        <mat-checkbox [(ngModel)]="task.completed"></mat-checkbox>
+        <span [class.completed]="task.completed">{{ task.title }}</span>
+        <button mat-icon-button color="warn" (click)="deleteTask(task)">
+          <mat-icon>Delete</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+  

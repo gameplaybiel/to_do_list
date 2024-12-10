@@ -1,0 +1,17 @@
+/* Centraliza o conteúdo da aplicação */
+.app-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo para o título */
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #3f51b5; /* Cor primária do Material Design */
+    text-transform: uppercase;
+  }
+  
